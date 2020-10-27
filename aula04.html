@@ -1,0 +1,39 @@
+<html lang="pt-br">
+    <head>
+        <title>Aula 04 de javascript</title>
+        <script type="text/javascript">
+            var b1 = window.prompt("Digite a nota 1:");
+            var b2 = window.prompt("Digite a nota 2:");
+            var b3 = window.prompt("Digite a nota 3:");
+            var b4 = window.prompt("Digite a nota 4:");
+            var resultado = (parseInt(b1) + parseInt (b2) + parseInt (b3) + parseInt(b4)) / 4;
+
+            if(resultado <= 5)
+            {
+                alert("A média do aluno: " +  resultado + " Situação do aluno: Reprovado!");
+                
+            }else if((resultado >= 5) && (resultado <= 6)){
+                alert("A média do aluno: " + resultado + " Situação do aluno: Recuperação!");
+            }else if((resultado >= 6.1) && (resultado < 10))
+            {
+                alert("A média do aluno: " + resultado + " Situação do aluno: Aprovado!");
+            }else {
+                alert("A média do aluno: " + resultado + " Aprovado, Parabêns vc foi um ótimo aluno!"); 
+            }
+           
+            /* if (resultado >= 7)
+            {
+                alert("A média do aluno: " + resultado + " Situação do aluno: Aprovado!");
+               
+            }*/
+                
+            
+     
+        </script>
+    </head>
+    <body>
+        <main>
+            <h1>IF, ELSE</h1>
+        </main>
+    </body>
+</html>
