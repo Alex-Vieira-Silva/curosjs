@@ -1,0 +1,34 @@
+<html lang="pt-br">
+    <head>
+        <title>Aula 08 de Javascript</title>
+        <script type="text/javascript">
+
+          /* var sorte = 30;
+           var numero = 0;
+
+           while(numero != sorte){
+
+            numero = window.prompt("Digite um número da sorte.");
+
+           }*/
+
+           function minhafoto1(){
+              document.getElementById("foto").setAttribute("src", "Alex.jpg");
+           }
+           function minhafoto2(){
+              document.getElementById("foto").setAttribute("src", "Alex3.jpg");
+           }
+
+        </script>
+       
+    </head>
+
+    <body>
+
+        <img src="imagens/Alex03.jpg" alt="Praia" id="foto" width="250px" height="250px" onmouseover="minhafoto1();"
+        onmouseout="minhafoto2()">
+    
+
+    </body>
+
+</html>

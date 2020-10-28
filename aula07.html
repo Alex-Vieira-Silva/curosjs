@@ -1,0 +1,35 @@
+<html lang="pt-br">
+    <head>
+        <title>Aula 07 de Javascript</title>
+        <script type="text/javascript">
+
+            for(var i = 0; i < 10; i++){
+                alert('ok');
+
+            }
+        </script>
+        <script type="text/javascript" src = "funcoes-mascaras.js"></script>
+    </head>
+
+    <body>
+        <main>
+            <h3>Cadastro</h3>
+            Nome: <input type="text"/>
+            <br/><br/>
+            Data de nascimento: <input type="text" id="txtData" maxlength="10" onkeyup="msk_date();" />
+            <br/><br/>
+            CEP: <input id="txtCep" type="text" maxlength="10" onkeyup="msk_cep();" />
+            <br/><br/>
+            Telefone: <input id="txtTel" type="text" maxlength="15" onkeyup="msk_tel();" />
+            <br/><br/>
+            <input type="button" value="Cadastrar"/>
+        </main>
+
+    </body>
+
+</html>
+   
+       
+        
+
+        

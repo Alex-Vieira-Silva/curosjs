@@ -1,0 +1,69 @@
+<html lang="pt-br">
+    <head>
+        <title>Aula 08 de Javascript</title>
+        <script type="text/javascript">
+
+            function somar(){
+                var n1 = document.getElementById("txtN1").value;
+                var n2 = document.getElementById("txtN2").value;
+                var resultado = parseFloat(n1) + parseFloat(n2);
+
+                document.getElementById("txtResultado").value = resultado;
+
+                document.getElementById("txtResultado2").innerHTML = resultado;
+            }
+
+            function subtrair(){
+                var n1 = document.getElementById("txtN1").value;
+                var n2 = document.getElementById("txtN2").value;
+                var resultado = parseFloat(n1) - parseFloat(n2);
+
+                document.getElementById("txtResultado").value = resultado;
+
+                document.getElementById("txtResultado2").innerHTML = resultado;
+            }
+
+            function multiplicar(){
+                var n1 = document.getElementById("txtN1").value;
+                var n2 = document.getElementById("txtN2").value
+                var resultado =  parseFloat(n1) * parseFloat(n2);
+
+                document.getElementById("txtResultado").value = resultado;
+
+                document.getElementById("txtResultado2").innerHTML = resultado;
+            }
+
+            function dividir(){
+                var n1 = document.getElementById("txtN1").value;
+                var n2 = document.getElementById("txtN2").value;
+                var resultado = parseFloat(n1) / parseFloat(n2);
+
+                document.getElementById("txtResultado").value = resultado;
+
+                document.getElementById("txtResultado2").innerHTML = resultado;
+            }
+
+           
+
+        </script>
+       
+    </head>
+
+    <body style="font-size: 22px;">
+        <h3>Calculadora</h3>
+        Número 1: <input type="number" id="txtN1" />
+        <br><br>
+        Número 2: <input type="number" id="txtN2"/>
+        <br><br>
+        Resultado: <input type="number" id="txtResultado"/>
+        <br><br>
+        <h1 id="txtResultado2">Resultado</h1>
+        <br><br>
+        <input type="button"  style="font-size: 25px;" value="+" onclick="somar();">
+        <input type="button" style="font-size: 25px;"  value="-" onclick="subtrair();">
+        <input type="button" style="font-size: 25px;"  value="*" onclick="multiplicar();">
+        <input type="button" style="font-size: 25px;"  value="/" onclick="dividir();">
+
+    </body>
+
+</html>

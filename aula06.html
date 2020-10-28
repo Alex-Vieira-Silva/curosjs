@@ -1,0 +1,58 @@
+<html lang="pt-br">
+    <head>
+        <title>Aula 06 de javascript</title>
+        <script type="text/javascript">
+
+            function msk_date(){
+                var n_char = document.getElementById("txtData").value.length;
+
+                if(n_char == 2){
+                    document.getElementById("txtData").value = document.getElementById("txtData").value + "/";
+                } else if(n_char == 5){
+                    document.getElementById("txtData").value = document.getElementById("txtData"). value + "/";
+                }
+
+            }
+
+            function msk_cep(){
+                var n_char = document.getElementById("txtCep").value.length;
+
+                if(n_char == 5){
+
+                    document.getElementById("txtCep").value = document.getElementById("txtCep").value + "-"
+
+                }
+            }
+
+            function msk_tel(){
+                var n_char = document.getElementById("txtTel").value.length;
+
+                if(n_char == 2){
+
+                    document.getElementById("txtTel").value = "(" + document.getElementById("txtTel").value + ") ";
+
+                } else if(n_char == 10){
+                    document.getElementById("txtTel").value = document.getElementById("txtTel").value + "-"
+                }
+            
+
+            }
+
+    
+        </script>
+    </head>
+    <body >
+        <main>
+            <h3>Cadastro</h3>
+            Nome: <input type="text"/>
+            <br/><br/>
+            Data de nascimento: <input type="text" id="txtData" maxlength="10" onkeyup="msk_date();" />
+            <br/><br/>
+            CEP: <input id="txtCep" type="text" maxlength="10" onkeyup="msk_cep();" />
+            <br/><br/>
+            Telefone: <input id="txtTel" type="text" maxlength="15" onkeyup="msk_tel();" />
+            <br/><br/>
+            <input type="button" value="Cadastrar"/>
+        </main>
+    </body>
+</html>
